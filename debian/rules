@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=pluggy
+export PYBUILD_TEST_PYTEST=1
+export PYBUILD_TEST_ARGS="$(CURDIR)/testing"
+
+#export PYBUILD_VERBOSE=1
+#export DH_VERBOSE=1
+
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f src/pluggy/_version.py

@@ -1,0 +1,136 @@
+python-pluggy (0.13.0-6) unstable; urgency=medium
+
+  * Team Upload.
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Nilesh Patra ]
+  * Clean _version.py pre-build (Closes: #978275)
+  * Declare compliance with policy 4.5.1
+  * Switch watch version to 4
+
+ -- Nilesh Patra <npatra974@gmail.com>  Mon, 25 Jan 2021 15:40:57 +0530
+
+python-pluggy (0.13.0-5) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Ondřej Nový ]
+  * Drop PyPy support.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper compat level to 13.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 05 Jun 2020 12:25:14 +0200
+
+python-pluggy (0.13.0-4) unstable; urgency=medium
+
+  * Drop python2 support; Closes: #938032
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 14 Apr 2020 09:48:09 -0400
+
+python-pluggy (0.13.0-3) unstable; urgency=medium
+
+  * Dont run unittests for python2 binary, to reduce pytest rdeps
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 13 Apr 2020 19:50:35 -0400
+
+python-pluggy (0.13.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add runtime depends on {python,python3,pypy}-importlib-metadata
+    (Closes: #942900)
+
+ -- Ondřej Nový <onovy@debian.org>  Wed, 23 Oct 2019 12:18:51 +0200
+
+python-pluggy (0.13.0-1) unstable; urgency=medium
+
+  [ Emmanuel Arias ]
+  * Team upload
+  * New upstream version 0.13.0 (Closes: #942694)
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Jonathan Carter ]
+  * Upload to unstable
+
+ -- Emmanuel Arias <emmanuelarias30@gmail.com>  Tue, 22 Oct 2019 08:43:23 -0300
+
+python-pluggy (0.12.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * Bump debhelper compat level to 12 and use debhelper-compat
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Add {python,python3,pypy}-importlib-metadata to B-D
+  * d/copyright: Merge duplcity, cleanup
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 01 Aug 2019 16:01:44 +0200
+
+python-pluggy (0.8.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * d/control:
+    - Remove ancient X-Python-Version field
+    - Remove ancient X-Python3-Version field
+    - Add {python,python3,pypy}-setuptools-scm to B-D
+  * Convert git repository from git-dpm to gbp layout
+  * Install examples
+  * Bump standards version to 4.2.1 (no changes)
+
+ -- Ondřej Nový <onovy@debian.org>  Wed, 07 Nov 2018 13:12:26 +0100
+
+python-pluggy (0.6.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Barry Warsaw ]
+  * d/control: Put DPMT in Maintainers and myself in Uploaders.
+
+  [ Ondřej Nový ]
+  * New upstream release
+  * d/control:
+    - Set Vcs-* to salsa.debian.org
+    - Remove useless versioning of depends on Python
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+  * d/rules: Run tests from whole testing directory
+  * Bump debhelper compat level to 11
+  * Add pypy-pluggy binary package
+  * Standards-Version is 4.1.3 now
+  * Add autopkgtest-pkg-python testsuite
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 26 Feb 2018 16:38:12 +0100
+
+python-pluggy (0.4.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Barry Warsaw ]
+  * New upstream release.  (Closes: #839386)
+  * d/control: Bump Standards-Version with no other changes needed.
+
+ -- Barry Warsaw <barry@debian.org>  Mon, 03 Oct 2016 11:59:55 -0400
+
+python-pluggy (0.3.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * d/rules: Update test_pluggy.py location.
+
+ -- Barry Warsaw <barry@debian.org>  Mon, 14 Dec 2015 15:55:33 -0500
+
+python-pluggy (0.3.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #785242)
+
+ -- Barry Warsaw <barry@debian.org>  Fri, 15 May 2015 16:17:51 -0400
